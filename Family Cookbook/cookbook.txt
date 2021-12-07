@@ -1,0 +1,82 @@
+
+--Family CookBook--
+----------------------
+
+	Name
+----------------------
+
+
+
+	Logo
+----------------------
+- Coat of Arms
+- Monogram
+- Seal
+
+
+	Website
+----------------------
+   -- Sections--
+      - food
+      - drink
+      - baking
+      - tonics	
+
+   -- Functionality --
+   -- Profile
+	- Name
+	- Favorite Recipes
+	- Contributed Recipes
+
+   -- Add Recipe
+     	- Ingredients and measurements
+     	- Instructions
+	- Name
+     	- Picture *optional*
+	- Recipe Type
+	    - Food
+		- Tags
+	    - Tonic
+		- Tags
+
+   -- Filters (Tags)
+    	- Lastname 
+	    - Garcia
+     	    - Garraway
+     	    - Guyett
+
+	- Culture
+     	    - American
+     	    - Caribbean
+    	    - Puerto Rican
+ 
+   	 - Holiday
+	    - New Years
+	    - Easter
+	    - Independence Day
+	    - Halloween
+	    - National Day of Mourning
+	    - Christmas
+
+  	  - Use/Symptom (Tonics)
+	    - Nausea
+	    - Upset stomache
+	    - Constipation
+            - Common Cold
+	    - Fever
+	    - Period Stimulation
+	    - Menstrual pain
+	    - Insomnia
+	    - Dry Eyes
+	    - Skin Irritation
+ 
+	- Backed by Science (Tonics) 
+	    - Source link
+
+	- Ingredient (Search)
+	    - 
+
+	- Type 
+	    - 	
+	- Time
+

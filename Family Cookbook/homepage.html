@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/CSS/master_styles.css">
+
+        <script defer src="../Family Cookbook/Assets/JavaScript/cookBookhome.js"></script>
+        
+        <title>The Family Cookbook</title>
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-md navbar-dark">
+
+            <div class="container-fluid b">
+
+             <!-- Branding... ie name and/or logo -->
+             <a class="navbar-brand" href="#">
+                <img src="Assets/Images/30x24.png" alt="" width="30" height="24"/>
+             </a>
+            
+              <!-- expand button for collasped state -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Navigation items -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Food</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Drinks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Drinks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Baking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">login</a>
+                    </li>
+                  </ul>
+
+              </div>
+            </div>
+        </nav>
+
+        <!-- Featured Recipies -->
+        <section class="container-fluid featured " id="Section--1">
+        <!-- Tiles lg and larger -->
+          <div class="d-none d-md-block">
+            <h3>Make this for <span style="font-family: 'sf_burlington_scriptregular';" >the Holidays</span> </h2>
+
+            <div class="row justify-content-center  gx-1">
+  
+              <div class="col-md-3">
+                <div>
+                  
+                  <img src="Assets/Images/joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg" class="img-fluid img-featured" alt="featured food"/>
+
+                  <div>
+                    <p class="featured-tag text-center"p>Lunch</p>
+                    <p class="dish-title text-center">Cucumber tea sandwitches with soft boiled eggs</p>
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+              <div class="col-md-3">
+                <div>
+
+                  <img src="Assets/Images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" class="img-fluid img-featured" alt="featured food"/>
+
+                  <div>
+                    <p class="featured-tag text-center"p>Breakfast</p>
+                    <p class="dish-title text-center">Descriptive dish name that is very descriptive</p>
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+              <div class="col-md-3">
+                <div>
+                
+                  <img src="Assets/Images/anna-tukhfatullina-food-photographer-stylist-Mzy-OjtCI70-unsplash.jpg" class="img-fluid img-featured" alt="featured food">
+                  
+                  <div>
+                    <p class="featured-tag text-center"p>Desert</p>
+                    <p class="dish-title text-center">Descriptive dish name that is very descriptive</p>
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+            </div>
+          </div>
+        <!-- Carosel md and smaller -->
+        <div id="carouselExampleCaptions" class="carousel slide d-md-none" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Assets/Images/600x400.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Assets/Images/600x400.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Assets/Images/600x400.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        </section>
+
+        <!-- Search bar with icons -->
+        <section>
+                  <!-- Search Bar with Icons Screens large and larger-->         
+        <div class="container-fluid search d-none d-md-block">
+          <div class="row  align-items-center justify-content-center">
+
+            <!-- Search Input -->
+            <div class="col-4">
+              <input class="form-control" type="text" placeholder="Search our Recipes" aria-label=".form-control-lg example">
+            </div>
+
+            <!-- Icons -->
+            
+              <div class="col-4">
+
+                <img src="assets/Images/48x48.png" alt=""/>
+                <img src="assets/Images/48x48.png" alt=""/>
+                <img src="assets/Images/48x48.png" alt=""/>
+                <img src="assets/Images/48x48.png" alt=""/>
+                <img src="assets/Images/48x48.png" alt=""/>
+
+              </div>
+
+          </div>         
+        </div>
+        
+        <!-- Search Bar with Icons Screens smaller than large -->         
+        <div class="container-fluid search d-md-none">
+           <div class="row  justify-content-center">
+        
+            <!-- Search Input -->
+             <div class="col py-2">
+                <input class="form-control" type="text" placeholder="Search our Recipes" aria-label=".form-control-lg example">
+             </div>
+        
+            <!-- Icons -->
+                
+             <div class="row justify-content-center">
+              <div class="col-6">
+
+                <img src="assets/Images/48x48.png" alt=""/>
+                <img src="assets/Images/48x48.png" alt=""/>
+                <img src="assets/Images/48x48.png" alt=""/>
+                <img src="assets/Images/48x48.png" alt=""/>
+                <img src="assets/Images/48x48.png" alt=""/>
+
+              </div>
+
+             </div>
+        
+           </div>         
+        </div>
+        </section>
+
+        <!-- About us -->
+        <section id="section--2">
+          <!-- Screens large and larger -->
+          <div class="container-fluid d-none d-lg-block">
+
+            <div class="row justify-content-center gx-0 ">
+  
+              <!-- About Text -->
+              <div class="col-lg-3 about-text">
+  
+                <h2 class="text-center">A Header</h2>
+                <h4 class="text-center"> Another Header</h4>
+                <p class="py-3">
+                  You think water moves fast? You should see ice.
+                  It moves like it has a mind. 
+                  Like it knows it killed the world once and got a taste for murder. 
+                  After the avalanche, it took us a week to climb out. 
+                  Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... 
+                  and only five made it out. 
+                  Now we took an oath, that I'm breaking now. 
+                  We said we'd say it was the snow that killed the other two, but it wasn't. 
+                  Nature is lethal but it doesn't hold a candle to man.
+                </p>
+  
+              </div>
+  
+              <!-- About Images -->
+                <div class="col-lg-3">
+                  <div>
+                    
+                    <img src="Assets/Images/840x1200.png" class="img-fluid" alt="featured food">
+    
+                  </div>
+    
+                </div>
+              
+                <div class="col-lg-3">
+                  <div>
+                    
+                    <img src="Assets/Images/840x1200.png" class="img-fluid" alt="featured food">
+    
+                  </div>
+    
+                </div>
+            </div>
+  
+          </div>
+
+          <!-- Screens Smaller than large -->
+          <div class="container-fluid d-lg-none">
+
+            <div>
+              <img src="Assets/Images/1064x600.png" class="img-fluid" alt="...">
+            </div>
+            <div class="row">
+              <div class="col">
+                <p class="text-center">
+                  Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. 
+                  Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Follow -->
+        <section>
+          <div class="container-fluid search  d-none d-lg-block">
+            <div class="row  justify-content-center">
+  
+              <!-- Icons -->
+
+              <div class="col-1">
+                <p>
+                  Follow us
+                </p>
+
+              </div>
+
+              <div class="col-3">
+                <img src="assets/Images/48x48.png" alt=""/>
+                <img src="assets/Images/48x48.png" alt=""/>
+                <img src="assets/Images/48x48.png" alt=""/>
+                <img src="assets/Images/48x48.png" alt=""/>
+              </div>
+
+             <!-- Search Input -->
+              <div class="col-2 py-2">
+                <input class="form-control" type="text" placeholder="First Name" aria-label=".form-control-lg example">
+              </div>
+
+              <div class="col-2 py-2">
+                <input class="form-control" type="text" placeholder="Email" aria-label=".form-control-lg example">
+              </div>
+  
+              <div class="col-1">
+                <button type="button" class="btn btn-secondary btn-lg">Go</button>
+              </div>
+
+            </div>         
+          </div>
+        </section>
+
+        <!-- Newly Added -->
+        <section id="section--3">
+
+          <div class="row justify-content-center align-items-center newstrip ">
+             
+            <div class="col-3">
+              <img src="Assets/Images/600x400.png" class="img-fluid" alt=""/>
+            </div>
+
+            <div class="col-6">
+              <p>
+                Well, the way they make shows is, they make one show. 
+                That show's called a pilot. 
+                Then they show that show to the people who make shows, 
+                and on the strength of that one show they decide if they're going to make more shows. 
+                Some pilots get picked and become television programs. 
+                Some don't, become nothing. 
+                She starred in one of the ones that became nothing.
+              </p>
+            </div>
+          
+          </div>
+
+          <div class="row justify-content-center align-items-center newstrip ">
+             
+              <div class="col-3">
+                <img src="Assets/Images/600x400.png" class="img-fluid" alt=""/>
+              </div>
+  
+              <div class="col-6">
+                <p>
+                  Well, the way they make shows is, they make one show. 
+                  That show's called a pilot. 
+                  Then they show that show to the people who make shows, 
+                  and on the strength of that one show they decide if they're going to make more shows. 
+                  Some pilots get picked and become television programs. 
+                  Some don't, become nothing. 
+                  She starred in one of the ones that became nothing.
+                </p>
+              </div>
+            
+          </div>
+
+          <div class="row justify-content-center align-items-center newstrip ">
+             
+            <div class="col-3">
+              <img src="Assets/Images/600x400.png" class="img-fluid" alt=""/>
+            </div>
+
+            <div class="col-6">
+              <p>
+                Well, the way they make shows is, they make one show. 
+                That show's called a pilot. 
+                Then they show that show to the people who make shows, 
+                and on the strength of that one show they decide if they're going to make more shows. 
+                Some pilots get picked and become television programs. 
+                Some don't, become nothing. 
+                She starred in one of the ones that became nothing.
+              </p>
+            </div>
+          
+          </div>
+
+        </section>
+
+       
+
+        <!-- Bottom Navigation -->
+
+
+            
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+
+</html>
