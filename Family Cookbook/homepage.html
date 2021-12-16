@@ -9,14 +9,15 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/CSS/master_styles.css">
 
-        <script defer src="../Family Cookbook/Assets/JavaScript/cookBookhome.js"></script>
+        <script defer src="/Assets/JavaScript/cookBookhome.js"></script>
         
         <title>The Family Cookbook</title>
     </head>
 
     <body>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-md navbar-dark">
+        <header class="header">
+          <nav class="navbar fixed-top navbar-expand-md navbar-dark">
 
             <div class="container-fluid b">
 
@@ -50,335 +51,990 @@
                         <a class="nav-link" href="#">Baking</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">login</a>
+                        <a class="nav-link" 
+                        data-bs-toggle="modal" data-bs-target="#Login-popup" 
+                        href="#">login</a>
                     </li>
                   </ul>
 
               </div>
             </div>
         </nav>
+        </header>
 
-        <!-- Featured Recipies -->
-        <section class="container-fluid featured " id="Section--1">
-        <!-- Tiles lg and larger -->
-          <div class="d-none d-md-block">
-            <h3>Make this for <span style="font-family: 'sf_burlington_scriptregular';" >the Holidays</span> </h2>
+        <div class="content">
 
-            <div class="row justify-content-center  gx-1">
+          <!-- Featured Recipies -->
+          <section class="container-fluid featured section " id="Section--1">
+          <!-- Tiles lg and larger -->
+            <div class="d-none d-lg-block">
+              <h3>Make this for <span style="font-family: 'reey'; font-size: 60px;" >the Holidays</span> </h2>
   
-              <div class="col-md-3">
-                <div>
+              <div class="row justify-content-center  gx-1">
+    
+                <div class="col-3">
+                  <div class="hover_img">
+                    
+                   <figure>
+
+                     <a href="#">
+                      <img 
+                      src="/Assets/Images/joseph-gonzalez-fdlZBWIP0aM-unsplash-lazy.jpg"
+                      data-src="Assets/Images/joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg" class="img-fluid img_featured target_images" 
+                      alt="featured food"/>
+                     </a>
+
+                   </figure>
+
+                    <div>
+                      <p class="featured_tag text-center">Lunch</p>
+                      <p class="dish_title text-center">Cucumber tea sandwitches with soft boiled eggs</p>
+                    </div>
+    
+                  </div>
+    
+                </div>
+    
+                <div class="col-3">
+                  <div class="hover_img">
+  
+                   <figure>
+                    <a href="#">
+                      <img 
+                      src="/Assets/Images/joseph-gonzalez-zcUgjyqEwe8-unsplash-lazy.jpg"
+                      data-src="Assets/Images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" class="img-fluid img_featured target_images" 
+                      alt="featured food"/>
+                    </a>
+                   </figure>
+  
+                    <div>
+                      <p class="featured_tag text-center">Breakfast</p>
+                      <p class="dish_title text-center">Descriptive dish name that is very descriptive</p>
+                    </div>
+    
+                  </div>
+    
+                </div>
+    
+                <div class="col-3">
+                  <div class="hover_img">
                   
-                  <img src="Assets/Images/joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg" class="img-fluid img-featured" alt="featured food"/>
-
-                  <div>
-                    <p class="featured-tag text-center"p>Lunch</p>
-                    <p class="dish-title text-center">Cucumber tea sandwitches with soft boiled eggs</p>
+                    <figure>
+                     <a href="#">
+                      <img 
+                      src="/Assets/Images/anna-tukhfatullina-food-photographer-stylist-Mzy-OjtCI70-unsplash-lazy.jpg"
+                      data-src="Assets/Images/anna-tukhfatullina-food-photographer-stylist-Mzy-OjtCI70-unsplash.jpg"
+                      class="img-fluid img_featured target_images" 
+                      alt="featured food">
+                     </a>
+                    </figure>
+                    
+                    <div>
+                      <p class="featured_tag text-center">Desert</p>
+                      <p class="dish_title text-center">Descriptive dish name that is very descriptive</p>
+                    </div>
+    
                   </div>
-  
+    
                 </div>
-  
+    
               </div>
-  
-              <div class="col-md-3">
-                <div>
-
-                  <img src="Assets/Images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" class="img-fluid img-featured" alt="featured food"/>
-
-                  <div>
-                    <p class="featured-tag text-center"p>Breakfast</p>
-                    <p class="dish-title text-center">Descriptive dish name that is very descriptive</p>
-                  </div>
-  
+            </div>
+          <!-- Carosel md and smaller -->
+          <div id="carouselExampleCaptions" class="carousel slide d-lg-none" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Assets/Images/600x400.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
                 </div>
-  
               </div>
-  
-              <div class="col-md-3">
-                <div>
-                
-                  <img src="Assets/Images/anna-tukhfatullina-food-photographer-stylist-Mzy-OjtCI70-unsplash.jpg" class="img-fluid img-featured" alt="featured food">
-                  
-                  <div>
-                    <p class="featured-tag text-center"p>Desert</p>
-                    <p class="dish-title text-center">Descriptive dish name that is very descriptive</p>
-                  </div>
-  
+              <div class="carousel-item">
+                <img src="Assets/Images/600x400.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
                 </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Assets/Images/600x400.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          </section>
   
-              </div>
+          <!-- Search bar with icons -->
+          <section class="section">
+                    <!-- Search Bar with Icons Screens medium and larger-->         
+          <div class="container-fluid d-none search d-md-block">
+            <div class="row align-items-center justify-content-center">
   
-            </div>
-          </div>
-        <!-- Carosel md and smaller -->
-        <div id="carouselExampleCaptions" class="carousel slide d-md-none" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="Assets/Images/600x400.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="Assets/Images/600x400.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="Assets/Images/600x400.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        </section>
-
-        <!-- Search bar with icons -->
-        <section>
-                  <!-- Search Bar with Icons Screens large and larger-->         
-        <div class="container-fluid search d-none d-md-block">
-          <div class="row  align-items-center justify-content-center">
-
-            <!-- Search Input -->
-            <div class="col-4">
-              <input class="form-control" type="text" placeholder="Search our Recipes" aria-label=".form-control-lg example">
-            </div>
-
-            <!-- Icons -->
-            
+              <!-- Search Input -->
               <div class="col-4">
-
-                <img src="assets/Images/48x48.png" alt=""/>
-                <img src="assets/Images/48x48.png" alt=""/>
-                <img src="assets/Images/48x48.png" alt=""/>
-                <img src="assets/Images/48x48.png" alt=""/>
-                <img src="assets/Images/48x48.png" alt=""/>
-
-              </div>
-
-          </div>         
-        </div>
-        
-        <!-- Search Bar with Icons Screens smaller than large -->         
-        <div class="container-fluid search d-md-none">
-           <div class="row  justify-content-center">
-        
-            <!-- Search Input -->
-             <div class="col py-2">
-                <input class="form-control" type="text" placeholder="Search our Recipes" aria-label=".form-control-lg example">
-             </div>
-        
-            <!-- Icons -->
-                
-             <div class="row justify-content-center">
-              <div class="col-6">
-
-                <img src="assets/Images/48x48.png" alt=""/>
-                <img src="assets/Images/48x48.png" alt=""/>
-                <img src="assets/Images/48x48.png" alt=""/>
-                <img src="assets/Images/48x48.png" alt=""/>
-                <img src="assets/Images/48x48.png" alt=""/>
-
-              </div>
-
-             </div>
-        
-           </div>         
-        </div>
-        </section>
-
-        <!-- About us -->
-        <section id="section--2">
-          <!-- Screens large and larger -->
-          <div class="container-fluid d-none d-lg-block">
-
-            <div class="row justify-content-center gx-0 ">
   
-              <!-- About Text -->
-              <div class="col-lg-3 about-text">
+                <div class="row align-items-center gx-1">
   
-                <h2 class="text-center">A Header</h2>
-                <h4 class="text-center"> Another Header</h4>
-                <p class="py-3">
-                  You think water moves fast? You should see ice.
-                  It moves like it has a mind. 
-                  Like it knows it killed the world once and got a taste for murder. 
-                  After the avalanche, it took us a week to climb out. 
-                  Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... 
-                  and only five made it out. 
-                  Now we took an oath, that I'm breaking now. 
-                  We said we'd say it was the snow that killed the other two, but it wasn't. 
-                  Nature is lethal but it doesn't hold a candle to man.
-                </p>
-  
-              </div>
-  
-              <!-- About Images -->
-                <div class="col-lg-3">
-                  <div>
-                    
-                    <img src="Assets/Images/840x1200.png" class="img-fluid" alt="featured food">
-    
+                  <div class="col">
+                    <input class="form-control" type="text" placeholder="Search our Recipes" aria-label=".form-control-lg example" >
                   </div>
-    
-                </div>
-              
-                <div class="col-lg-3">
-                  <div>
-                    
-                    <img src="Assets/Images/840x1200.png" class="img-fluid" alt="featured food">
-    
-                  </div>
-    
-                </div>
-            </div>
   
-          </div>
-
-          <!-- Screens Smaller than large -->
-          <div class="container-fluid d-lg-none">
-
-            <div>
-              <img src="Assets/Images/1064x600.png" class="img-fluid" alt="...">
-            </div>
-            <div class="row">
-              <div class="col">
-                <p class="text-center">
-                  Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. 
-                  Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
-                </p>
+                  <div class="col button">
+                    <button type="button" class="btn btn-secondary btn-lg">Go</button>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Follow -->
-        <section>
-          <div class="container-fluid search  d-none d-lg-block">
-            <div class="row  justify-content-center">
   
               <!-- Icons -->
-
-              <div class="col-1">
-                <p>
-                  Follow us
-                </p>
-
-              </div>
-
-              <div class="col-3">
-                <img src="assets/Images/48x48.png" alt=""/>
-                <img src="assets/Images/48x48.png" alt=""/>
-                <img src="assets/Images/48x48.png" alt=""/>
-                <img src="assets/Images/48x48.png" alt=""/>
-              </div>
-
-             <!-- Search Input -->
-              <div class="col-2 py-2">
-                <input class="form-control" type="text" placeholder="First Name" aria-label=".form-control-lg example">
-              </div>
-
-              <div class="col-2 py-2">
-                <input class="form-control" type="text" placeholder="Email" aria-label=".form-control-lg example">
-              </div>
+              
+                <div class="col searchbar_icons  hover_icon">
   
-              <div class="col-1">
-                <button type="button" class="btn btn-secondary btn-lg">Go</button>
-              </div>
+                  <figure>
+                    <a href="#">
+                      <img src="assets/Images/trophy.png" class="icon" alt=""/>
+                    </a>
+                  </figure>
 
+                  <figure>
+                    <a href="#">
+                      <img src="assets/Images/salad.png" class="icon" alt=""/>
+                    </a>
+                  </figure>
+
+                  <figure>
+                    <a href="#">
+                      <img src="assets/Images/food-delivery.png" class="icon" alt=""/>
+                    </a>
+                  </figure>
+
+                  <figure>
+                    <a href="#">
+                      <img src="assets/Images/pan.png" class="icon" alt=""/>
+                    </a>
+                  </figure>
+                  
+                  <figure>
+                    <a href="#">
+                      <img src="assets/Images/healthy-heart.png" class="icon" alt=""/>
+                    </a>
+                  </figure>
+  
+                </div>
+  
             </div>         
           </div>
-        </section>
-
-        <!-- Newly Added -->
-        <section id="section--3">
-
-          <div class="row justify-content-center align-items-center newstrip ">
-             
-            <div class="col-3">
-              <img src="Assets/Images/600x400.png" class="img-fluid" alt=""/>
-            </div>
-
-            <div class="col-6">
-              <p>
-                Well, the way they make shows is, they make one show. 
-                That show's called a pilot. 
-                Then they show that show to the people who make shows, 
-                and on the strength of that one show they decide if they're going to make more shows. 
-                Some pilots get picked and become television programs. 
-                Some don't, become nothing. 
-                She starred in one of the ones that became nothing.
-              </p>
-            </div>
           
+          <!-- Search Bar with Icons Screens smaller than medium -->         
+          <div class="container-fluid search d-md-none">
+             <div class="row justify-content-center">
+          
+              <!-- Search Input -->
+               <div class="col py-2">
+                  <input class="form-control" type="text" placeholder="Search our Recipes" aria-label=".form-control-lg example">
+               </div>
+          
+              <!-- Icons -->
+                  
+               <div class="row justify-content-center">
+                <div class="col searchbar_icons hover_icon">
+  
+                  <figure>
+                    <img src="assets/Images/48x48.png" alt=""/>
+                  </figure>
+                  <img src="assets/Images/48x48.png" alt=""/>
+                  <img src="assets/Images/48x48.png" alt=""/>
+                  <img src="assets/Images/48x48.png" alt=""/>
+                  <img src="assets/Images/48x48.png" alt=""/>
+  
+                </div>
+  
+               </div>
+          
+             </div>         
           </div>
+          </section>
+  
+          <!-- About us -->
+          <section class="section" id="section--2 ">
+            <!-- Screens large and larger -->
+            <div class="container-fluid d-none d-lg-block ">
+  
+              <div class="row justify-content-center ">
+    
+                <!-- About Text -->
+                <div class="col about_text">
+    
+                  <h2 class="text-center">A Header</h2>
+                  <h4 class="text-center"> Another Header</h4>
+                  <p class="py-3">
+                    Cupcake ipsum dolor sit amet cake marzipan sugar plum. 
+                    Brownie carrot cake danish liquorice carrot cake candy canes topping tart. 
+                    Sesame snaps apple pie tiramisu marzipan chocolate. 
+                    Cheesecake topping powder biscuit pie lollipop soufflé chupa chups dessert. 
+                    Croissant cotton candy chocolate cake gummi bears powder cake. 
+                    Pastry sweet icing gummies gummi bears sweet shortbread. 
+                    Cotton candy soufflé soufflé cotton candy jelly beans fruitcake soufflé cheesecake pie. 
+                    Croissant dragée danish jelly-o chupa chups chupa chups. 
+                    Sweet jelly beans cheesecake chocolate bar halvah. 
+                    Caramels marzipan bonbon jujubes sweet roll.
+                  </p>
+    
+                </div>
+    
+                <!-- About Images -->
+                  <div class="col gx-0">
+  
+                    <img 
+                    src="/Assets/Images/tyson-gorbBYbo6KM-unsplash-lazy.jpg"
+                    data-src="Assets/Images/tyson-gorbBYbo6KM-unsplash.jpg" class="img-fluid about_us_img target_images" 
+                    alt="featured food">
+      
+                  </div>
+                
+                  <div class="col gx-0">
+  
+                    <img 
+                    src="/Assets/Images/jimmy-dean-L8V802a8lz0-unsplash-lazy.jpg"
+                    data-src="Assets/Images/jimmy-dean-L8V802a8lz0-unsplash.jpg" 
+                    class="img-fluid about_us_img target_images" 
+                    alt="featured food">
+      
+                  </div>
+              </div>
+    
+            </div>
+  
+            <!-- Screens Smaller than large -->
+            <div class="container-fluid d-lg-none">
+  
+              <div>
+                <img 
+                src="Assets/Images/1064x600.png" 
+                class="img-fluid" 
+                alt="...">
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="text-center">
+                    Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. 
+                    Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+  
+          <!-- Follow -->
+          <section class="section">
+            <div class="container-fluid search  d-none d-lg-block">
+              <div class="row align-items-center  justify-content-center">
+    
+                <!-- Icons -->
+  
+                <div class="col follow">
+                  <p>
+                    Follow us
+                  </p>
+                </div>
+  
+                <div class="col-3 searchbar_icons hover_icon">
+                  
+                  <figure>
+                    <a href="#">
+                      <img src="assets/Images/facebook.png" class="icon" alt=""/>
+                    </a>
+                  </figure>
 
-          <div class="row justify-content-center align-items-center newstrip ">
-             
-              <div class="col-3">
-                <img src="Assets/Images/600x400.png" class="img-fluid" alt=""/>
+                  <figure>
+                    <a href="#">
+                      <img src="assets/Images/twitter.png" class="icon" alt=""/>
+                    </a>
+                  </figure>
+
+                  <figure>
+                    <a href="#">
+                      <img src="assets/Images/instagram.png" class="icon" alt=""/>
+                    </a>
+                  </figure>
+
+                  <figure>
+                    <a href="#">
+                      <img src="assets/Images/tik-tok.png" class="icon" alt=""/>
+                    </a>
+                  </figure>
+                </div>
+  
+               <!-- Search Input -->
+                <div class="col-6">
+                  <div class="row align-items-center gx-1">
+                    <div class="col">
+                      <input class="form-control" type="text" placeholder="First Name" aria-label=".form-control-lg example">
+                    </div>
+      
+                    <div class="col">
+                      <input class="form-control" type="text" placeholder="Email" aria-label=".form-control-lg example">
+                    </div>
+        
+                    <div class="col button">
+                      <button type="button" class="btn btn-secondary btn-lg">Go</button>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>         
+            </div>
+          </section>
+  
+          <!-- Newly Added -->
+          <section class="section" id="section--3">
+          
+          <h2> Newly Added Recipes</h2>
+            <div class="row justify-content-center">
+              
+              <div class="col-8 newstrip_container">
+  
+                <div class="row justify-content-center align-items-center newstrip">
+                   
+                  <!-- Image -->
+                  <div class="col newstrip_img_container">
+                    <div  class="hover_img">
+                      <figure>
+                        <a href="#">
+                          <img 
+                        src="/Assets/Images/48x48.png"
+                        data-src="/assets/images/fathul-abrar-ZqREbckCRQA-unsplash.jpg" 
+                        class="newstrip_img target_images" 
+                        alt=""/>
+                        </a>
+                      </figure>
+                    </div>
+                  </div>
+                  <!-- Text -->
+                  <div class="col">
+                    <h5>Recipe Title</h5>
+                    <p>
+                      Apple pie lollipop oat cake cotton candy toffee topping marzipan gummi bears marzipan. 
+                      Sweet roll jelly beans tart oat cake bear claw. Sweet roll soufflé lollipop pudding lemon drops tart. 
+                      Bear claw gummi bears pudding cookie sesame snaps. 
+                      Gummies lollipop fruitcake gingerbread shortbread bear claw. 
+                      Jujubes toffee tart ice cream cake. Fruitcake oat cake cupcake fruitcake sugar plum. 
+                      Candy liquorice cotton candy cake donut pudding candy dragée chocolate. 
+                      Jujubes pie icing pastry chupa chups cake fruitcake apple pie. 
+                      Sugar plum cheesecake macaroon cupcake soufflé sesame snaps.
+                    </p>
+                    <a href="#" class="read_more_link">Read More</a>
+                  </div>
+                
+                </div>
+                
+                <hr>
+  
+                <div class="row justify-content-center align-items-center newstrip">
+                   <!-- Image -->
+                  <div class="col newstrip_img_container">
+                   <div class="hover_img">
+                     <figure>
+                      <a href="#">
+                        <img 
+                      src="/Assets/Images/48x48.png"
+                      data-src="Assets/Images/whitney-wright-TgQkxQc-t_U-unsplash.jpg" 
+                      class="newstrip_img target_images" 
+                      alt=""/>
+                      </a>
+                     </figure>
+                   </div>
+                  </div>
+                    <!-- text -->
+                  <div class="col">
+                    <h5>Recipe Title</h5>
+                    <p>
+                      Apple pie lollipop oat cake cotton candy toffee topping marzipan gummi bears marzipan. 
+                      Sweet roll jelly beans tart oat cake bear claw. Sweet roll soufflé lollipop pudding lemon drops tart. 
+                      Bear claw gummi bears pudding cookie sesame snaps. 
+                      Gummies lollipop fruitcake gingerbread shortbread bear claw. 
+                      Jujubes toffee tart ice cream cake. Fruitcake oat cake cupcake fruitcake sugar plum. 
+                      Candy liquorice cotton candy cake donut pudding candy dragée chocolate. 
+                      Jujubes pie icing pastry chupa chups cake fruitcake apple pie. 
+                      Sugar plum cheesecake macaroon cupcake soufflé sesame snaps.
+                    </p>
+                    <a href="#" class="read_more_link">Read More</a>
+                  </div>
+                
+                </div>
+  
+                <hr>
+  
+                <div class="row justify-content-center align-items-center newstrip">
+                   <!-- Image -->
+                  <div class="col newstrip_img_container">
+                    <div class="hover_img">
+                      <figure>
+                        <a href="#">
+                          <img 
+                        src="/Assets/Images/48x48.png"
+                        data-src="Assets/Images/charles-deluvio-PqsImnjuElM-unsplash.jpg" 
+                        class="newstrip_img target_images" 
+                        alt=""/>
+                        </a>
+                      </figure>
+                    </div>
+                  </div>
+                    <!-- Text -->
+                  <div class="col">
+                    <h5>Recipe Title</h5>
+                    <p>
+                      Apple pie lollipop oat cake cotton candy toffee topping marzipan gummi bears marzipan. 
+                      Sweet roll jelly beans tart oat cake bear claw. Sweet roll soufflé lollipop pudding lemon drops tart. 
+                      Bear claw gummi bears pudding cookie sesame snaps. 
+                      Gummies lollipop fruitcake gingerbread shortbread bear claw. 
+                      Jujubes toffee tart ice cream cake. Fruitcake oat cake cupcake fruitcake sugar plum. 
+                      Candy liquorice cotton candy cake donut pudding candy dragée chocolate. 
+                      Jujubes pie icing pastry chupa chups cake fruitcake apple pie. 
+                      Sugar plum cheesecake macaroon cupcake soufflé sesame snaps.
+                    </p>
+                    <a href="#" class="read_more_link">Read More</a>
+                  </div>
+                
+                </div>
+  
               </div>
   
-              <div class="col-6">
-                <p>
-                  Well, the way they make shows is, they make one show. 
-                  That show's called a pilot. 
-                  Then they show that show to the people who make shows, 
-                  and on the strength of that one show they decide if they're going to make more shows. 
-                  Some pilots get picked and become television programs. 
-                  Some don't, become nothing. 
-                  She starred in one of the ones that became nothing.
-                </p>
+              <div class="col sidebar">
+  
+                <div>
+                  <a href="#">
+                    <img 
+                  src="/Assets/Images/48x48.png"
+                  data-src="/Assets/Images/22-Healthy-Freezer-Meals-1.jpg" 
+                  class="sidebar_img target_images" 
+                  alt="">
+                  </a>
+                </div>
+  
+                <div class="list-group recipe_link_sidebar">
+  
+                  <h5 class="text-center">Our Recipe collection</h5>
+  
+                  <a href="#" class="list-group-item list-group-item-action">A link item</a>
+                  <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                  <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                  <a href="#" class="list-group-item list-group-item-action">A fifth link item</a>
+  
+                </div>
+  
               </div>
-            
-          </div>
-
-          <div class="row justify-content-center align-items-center newstrip ">
+  
+            </div>
+  
+          </section>
+  
+         <!-- Featured Categories Tab Component -->
+         <section class="section" id="section--4">
+  
+           <div class="row featured_categories_container align-items-center justify-content-center">
              
-            <div class="col-3">
-              <img src="Assets/Images/600x400.png" class="img-fluid" alt=""/>
+              <!-- Tabs -->
+              <div class="featured_categories">
+
+                <div class="featured_categories_tab_container">
+
+                  <button class="
+                    featured_categories_tab 
+                    featured_categories_tab--1
+                    featured_categories_tab--active
+                    " 
+                    data-tab="1">
+                    Vegetarian
+                  </button>
+
+                  <button class="
+                    featured_categories_tab 
+                    featured_categories_tab--2" 
+                    data-tab="2">
+                    One Pot meals
+                  </button>
+
+                  <button class="
+                    featured_categories_tab 
+                    featured_categories_tab--3"
+                    data-tab="3">
+                    Bread
+                  </button>
+
+                </div>
+
+              </div>
+
+
+              <!-- Content -->
+              <div class=" 
+              featured_categories_content 
+              featured_categories_content--1
+              featured_categories_content--active">
+    
+                <div class="row justify-content-center">
+                  
+                  <div class="col featured_categories_img_container">
+    
+                    <div class="hover_img">
+                      <figure>
+                        <a href="#">
+                          <img 
+                          src="/Assets/Images/250X400.png" 
+                          data-src="/assets/images/adalia-botha-Y0Dc9lY0A3I-unsplash.jpg"
+                          class="featured_categories_img target_images" alt=""/>
+                    
+                        </a>
+                      </figure>
+                    </div>
+
+                    <div>
+
+                      <p class="featured_categories_tag text-center">
+                        Lunch
+                      </p>
+                      <p class="featured_categories_dish_title text-center">
+                        Cucumber tea sandwitches with soft boiled eggs
+                      </p>
+
+                    </div>
+                  </div>
+    
+                  <div class="col featured_categories_img_container">
+    
+                    <div class="hover_img">
+                      <figure>
+                        <a href="#">
+                          <img 
+                          src="/Assets/Images/250X400.png" 
+                          data-src="/assets/images/jennifer-schmidt-zOlQ7lF-3vs-unsplash.jpg"
+                          class="featured_categories_img target_images" alt=""/>
+                    
+                        </a>
+                      </figure>
+                    </div>
+
+                    <div>
+                      <p class="featured_categories_tag text-center">
+                        Lunch
+                      </p>
+
+                      <p class="featured_categories_dish_title text-center">
+                        Cucumber tea sandwitches with soft boiled eggs
+                      </p>
+                      
+                    </div>
+                  </div>
+    
+                  <div class="col featured_categories_img_container">
+    
+                    <div class="hover_img">
+                      <figure>
+                        <a href="#">
+                          <img 
+                          src="/Assets/Images/250X400.png"
+                          data-src="/Assets/Images/ruth-georgiev-Q4CLQ1BDybU-unsplash.jpg" class="featured_categories_img target_images" 
+                          alt=""/>
+                    
+                        </a>
+                      </figure>
+                    </div>
+    
+                    <div class="row justify-content-center">
+                      <div class="col">
+
+                        <p class="featured_categories_tag text-center">
+                          Lunch
+                        </p>
+                        <p class="featured_categories_dish_title text-center">
+                          Cucumber tea sandwitches with soft boiled eggs
+                        </p>
+
+                      </div>
+                      
+                    </div>
+                  </div>
+    
+                </div>
+    
+              </div>
+    
+              <div class="            
+              featured_categories_content 
+              featured_categories_content--2">
+                
+                <div class="row justify-content-center">
+                    
+                  <div class="col featured_categories_img_container">
+
+                    <div class="hover_img">
+                      <figure>
+                        <a href="#">
+                          <img 
+                          src="/Assets/Images/250X400.png" 
+                          data-src="/assets/images/olayinka-babalola-r01ZopTiEV8-unsplash.jpg"
+                          class="featured_categories_img target_images" alt=""/>
+                    
+                        </a>
+                      </figure>
+                    </div>
+
+                    <div>
+
+                      <p class="featured_categories_tag text-center">
+                        Lunch
+                      </p>
+                      <p class="featured_categories_dish_title text-center">
+                        Cucumber tea sandwitches with soft boiled eggs
+                      </p>
+
+                    </div>
+                  </div>
+
+                  <div class="col featured_categories_img_container">
+
+                    <div class="hover_img">
+                      <figure>
+                        <a href="#">
+                          <img 
+                          src="/Assets/Images/250X400.png" 
+                          data-src="/assets/images/food-photographer-jennifer-pallian-8pUjhBm4cLw-unsplash.jpg"
+                          class="featured_categories_img target_images" alt=""/>
+                    
+                        </a>
+                      </figure>
+                    </div>
+
+                    <div>
+                      <p class="featured_categories_tag text-center">
+                        Lunch
+                      </p>
+
+                      <p class="featured_categories_dish_title text-center">
+                        Cucumber tea sandwitches with soft boiled eggs
+                      </p>
+                      
+                    </div>
+                  </div>
+
+                  <div class="col featured_categories_img_container">
+
+                    <div class="hover_img">
+                      <figure>
+                        <a href="#">
+                          <img 
+                          src="/Assets/Images/250X400.png"
+                          data-src="/Assets/Images/anshu-a-wmmLnCBcD-o-unsplash.jpg" class="featured_categories_img target_images" 
+                          alt=""/>
+                    
+                        </a>
+                      </figure>
+                    </div>
+
+                    <div class="row justify-content-center">
+                      <div class="col">
+
+                        <p class="featured_categories_tag text-center">
+                          Lunch
+                        </p>
+                        <p class="featured_categories_dish_title text-center">
+                          Cucumber tea sandwitches with soft boiled eggs
+                        </p>
+
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+    
+              <div class="            
+              featured_categories_content 
+              featured_categories_content--3">
+                
+              <div class="row justify-content-center">
+                    
+                <div class="col featured_categories_img_container">
+
+                  <div class="hover_img">
+                    <figure>
+                      <a href="#">
+                        <img 
+                        src="/Assets/Images/250X400.png" 
+                        data-src="/assets/images/monika-grabkowska-nVoDL1YDWRE-unsplash.jpg"
+                        class="featured_categories_img target_images" alt=""/>
+                  
+                      </a>
+                    </figure>
+                  </div>
+
+                  <div>
+
+                    <p class="featured_categories_tag text-center">
+                      Lunch
+                    </p>
+                    <p class="featured_categories_dish_title text-center">
+                      Cucumber tea sandwitches with soft boiled eggs
+                    </p>
+
+                  </div>
+                </div>
+
+                <div class="col featured_categories_img_container">
+
+                  <div class="hover_img">
+                    <figure>
+                      <a href="#">
+                        <img 
+                        src="/Assets/Images/250X400.png" 
+                        data-src="/assets/images/megan-allen-oQpvta3hD2g-unsplash.jpg"
+                        class="featured_categories_img target_images" alt=""/>
+                  
+                      </a>
+                    </figure>
+                  </div>
+
+                  <div>
+                    <p class="featured_categories_tag text-center">
+                      Lunch
+                    </p>
+
+                    <p class="featured_categories_dish_title text-center">
+                      Cucumber tea sandwitches with soft boiled eggs
+                    </p>
+                    
+                  </div>
+                </div>
+
+                <div class="col featured_categories_img_container">
+
+                  <div class="hover_img">
+                    <figure>
+                      <a href="#">
+                        <img 
+                        src="/Assets/Images/250X400.png"
+                        data-src="/Assets/Images/nicolas-j-leclercq-KVJkIDJDYUc-unsplash.jpg" class="featured_categories_img target_images" 
+                        alt=""/>
+                  
+                      </a>
+                    </figure>
+                  </div>
+
+                  <div class="row justify-content-center">
+                    <div class="col">
+
+                      <p class="featured_categories_tag text-center">
+                        Lunch
+                      </p>
+                      <p class="featured_categories_dish_title text-center">
+                        Cucumber tea sandwitches with soft boiled eggs
+                      </p>
+
+                    </div>
+                    
+                  </div>
+                </div>
+
+              </div>
+
             </div>
+  
+           </div>
 
-            <div class="col-6">
-              <p>
-                Well, the way they make shows is, they make one show. 
-                That show's called a pilot. 
-                Then they show that show to the people who make shows, 
-                and on the strength of that one show they decide if they're going to make more shows. 
-                Some pilots get picked and become television programs. 
-                Some don't, become nothing. 
-                She starred in one of the ones that became nothing.
-              </p>
-            </div>
-          
-          </div>
+         </section>
 
-        </section>
-
-       
+        </div>
 
         <!-- Bottom Navigation -->
+       <footer class="footer_nav">
+         
+        <div class="row justify-content-center">
 
+          <!-- Nav Links -->
+          <div class="col-3">
+           
+            <!-- links -->
+            <div class="row">
+              
+              <div class="col">
 
+                <ul>
+
+                  <h5>Nav section</h5>
+
+                  <li>Nav Item</li>
+                  <li>Nav Item</li>
+                  <li>Nav Item</li>
+                  <li>Nav Item</li>
+                  <li>Nav Item</li>
+                </ul>
+
+              </div>
+
+              <div class="col">
+                
+                <ul>
+
+                  <h5>Nav section</h5>
+
+                  <li>Nav Item</li>
+                  <li>Nav Item</li>
+                  <li>Nav Item</li>
+                  <li>Nav Item</li>
+                  <li>Nav Item</li>
+                </ul>
+
+              </div>
+
+              
+            </div>
             
+            <!-- Logo and copyright -->
+            <div class="row">
+              
+            </div>
+          </div>
+
+          <!-- Sign up -->
+          <div class="col-3">
+
+            <div class="row justify-content-center align-items-center text-center">
+
+              <div class="col">
+
+                <h5><span>Sign up</span> for email updates</h5>
+
+                  <p>
+                    Get a free eCookbook with our top 25 recipies
+                  </p>
+
+                <div class="row align-items-center gx-1">
+
+                  <!-- Input fields -->
+                  <div class="col">
+                    <input class="form-control" type="text" placeholder="First Name" aria-label=".form-control-lg example">
+                  </div>
+    
+                  <div class="col">
+                    <input class="form-control" type="text" placeholder="Email" aria-label=".form-control-lg example">
+                  </div>
+      
+                  <div class="col button">
+                    <button type="button" class="btn btn-secondary btn-lg">Go</button>
+                  </div>
+
+                  <!-- Icons -->
+                  <div class="row justify-content-center">
+
+                    <div class="col searchbar_icons hover_icon">
+                  
+                      <figure>
+                        <a href="#">
+                          <img src="assets/Images/facebook.png" class="icon" alt=""/>
+                        </a>
+                      </figure>
+      
+                      <figure>
+                        <a href="#">
+                          <img src="assets/Images/twitter.png" class="icon" alt=""/>
+                        </a>
+                      </figure>
+      
+                      <figure>
+                        <a href="#">
+                          <img src="assets/Images/instagram.png" class="icon" alt=""/>
+                        </a>
+                      </figure>
+      
+                      <figure>
+                        <a href="#">
+                          <img src="assets/Images/tik-tok.png" class="icon" alt=""/>
+                        </a>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        
+        <div class="row">
+
+        </div>
+
+       </footer>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Login-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+          <div class="modal-dialog">
+
+            <div class="modal-content">
+
+              <div class="modal-header">
+                
+                <h5 class="modal-title" id="exampleModalLabel">Log in</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+              </div>
+
+              <div class="modal-body">
+
+                <!-- Email -->
+                <div class="input-group mb-3">
+
+                  <input type="text" class="form-control" placeholder=" Email" aria-label="Email" aria-describedby="basic-addon2">
+                  
+                </div>
+
+                <!-- Password -->
+                <div class="input-group mb-3">
+
+                  <input type="text" class="form-control" placeholder=" Password" aria-label="Password" aria-describedby="basic-addon2">                 
+
+                </div>
+
+              </div>
+
+              <div class="modal-footer">
+
+                <div class="d-grid ">
+                  <button class="btn btn-primary" type="button">Log in</button>
+                 
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>   
     
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
